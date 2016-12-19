@@ -21,7 +21,7 @@ socket.on('message', function (message) {
 
 	console.log('New message: ' + message.text);
 	
-	$message.append('<p><strong>' + message.name + ' ' + momentTimestamp.local().format('h:mm a') + ': </strong> ' + message.text + '</p>');
+	$message.append('<li class="list-group-item"><strong>' + message.name + ' ' + momentTimestamp.local().format('h:mm a') + ': </strong></br>' + message.text + '</li>');
 });
 
 // Handles submitting of new message
